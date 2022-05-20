@@ -1,0 +1,28 @@
+<section id="home">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 col-xl-7 col-md-6 d-flex flex-column justify-content-center ">
+                <h1>
+                    <%= page.data.homeTitle %>
+                </h1>
+                <p class="lead">
+                    <%- page.data.homeDescription %>
+                </p>
+                <% if(page.data.available){ %>
+                          <div>
+                              <a href="#contact">
+                                <button class="btn btn-lg btn-outline-secondary px-5 py-2">Contact</button>
+
+                              </a>
+                          </div>
+                <% }else{ %>
+                        <p><i><%= page.data.unavailableMessage %></i></p>
+                <% } %>
+            </div>
+            <div class="col-9 ms-auto col-md-6 col-lg-4">
+                <img class="tess-img img-fluid" src="<%=page.data.homeImage%>" alt="">
+            </div>
+        </div>
+
+    </div>
+</section>

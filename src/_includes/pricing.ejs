@@ -1,0 +1,34 @@
+<section id="pricing" class="pricing light">
+    <div class="container">
+        <div class="row">
+            <h2>
+                Pricing
+            </h2>
+            <h3>
+                <%= page.data.pricingPrice %>
+            </h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="payment">
+                        <h4>                            
+                            <%= page.data.pricingPara1Title %>
+                        </h4>
+                        <p>
+                            <%- page.data.pricingPara1Body %>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-3 mt-lg-0">
+                    <div class="cancellations">
+                        <h4>
+                            <%= page.data.pricingPara2Title %>
+                        </h4>
+                        <p>
+                            <%- page.data.pricingPara2Body %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

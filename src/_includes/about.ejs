@@ -1,0 +1,60 @@
+<!-- <section id="about" style="margin-top: -50px; padding-top: 50px;"> -->
+<section id="about" class="light about">
+        <div class="container">
+
+            <div class="row">
+                    <h2>
+                        About Me
+                    </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4><%=page.data.aboutPara1Title%></h4>
+                    <p>
+                        <%-page.data.aboutPara1Body%>
+                    </p>
+
+                    <div class="accordion mt-4" id="accordionExample">
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseQualifications" aria-expanded="false"
+                                    aria-controls="collapseQualifications">
+                                    <%= page.data.aboutDropdown1Title %>
+                                </button>
+                            </h5>
+                            <div id="collapseQualifications" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <%- page.data.aboutDropdown1Body %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2">
+                            <h5 class="accordion-header" >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseResearch" aria-expanded="false"
+                                    aria-controls="collapseResearch">
+                                    <%= page.data.aboutDropdown2Title %>
+                                </button>
+                            </h5>
+                            <div id="collapseResearch" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    <%- page.data.aboutDropdown2Body %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <h4><%=page.data.aboutPara2Title%></h4>
+                    <p>
+                        <%-page.data.aboutPara2Body%>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+</section>

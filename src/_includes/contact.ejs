@@ -1,0 +1,64 @@
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                <h2>
+                    Contact
+                </h2>
+
+                <% if(page.data.available){ %>
+                    <h3>
+                        <%= page.data.contactMessage %>
+                    </h3>
+                    <form action="https://api.staticforms.xyz/submit" name="contact" method="post">
+                        <input type="hidden" name="accessKey" value="9de2d203-a2f6-4dea-83cf-cdbfd8980eb4">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone number (if you prefer)</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" 
+                                aria-describedby="phoneHelp">
+                        </div>
+                        <div class="mb-3">
+
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" name="message" id="message" required></textarea>
+                            <div id="emailHelp" class="form-text">
+                                Your information is kept confidential and only seen by me once submitted.
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="replyTo" value="@">
+
+                        <input type="hidden" name="redirectTo" value="http://www.google.com">
+
+                        <input type="text" name="honeypot" style="display: none;">
+
+                        <div
+                            class="mb-5 d-flex flex-column flex-md-row justify-content-between align-items-center pt-3">
+
+
+
+
+                            <button id="btnSubmit" type="submit"
+                                class="shadow btn btn-lg btn-secondary bg-dark px-5 py-2">
+                                <strong>Submit</strong>
+                            </button>
+                        </div>
+                    </form>
+                    <% }else{ %>
+                        <p><i>
+                                <%= page.data.unavailableMessage %>
+                            </i></p>
+                        <% } %>
+            </div>
+        </div>
+    </div>
+</section>

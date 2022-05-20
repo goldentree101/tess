@@ -1,0 +1,113 @@
+/*Vars*/
+:root {
+    --bg-light: rgba(255, 255, 255, 0.717);
+    --clr-orange: #feeabc;
+    --gradient-top: radial-gradient(circle at top right, var(--clr-orange) 0%, #717fb91c 35%);
+    --gradient-bottom: radial-gradient(circle at bottom left, var(--clr-orange) 0%, #dde4ff23 40%);
+    --gradient-top-m: radial-gradient(circle at top right, var(--clr-orange) 0%, #717fb91c 15%);
+    --gradient-bottom-m: radial-gradient(circle at bottom left, var(--clr-orange) 0%, #dde4ff23 24%);
+    --gradient-top-l: radial-gradient(circle at top right, var(--clr-orange) 0%, #717fb91c 25%);
+    --gradient-bottom-l: radial-gradient(circle at bottom left, var(--clr-orange) 0%, #dde4ff23 35%);
+}
+/*classes*/
+.light{
+    background-color: var(--bg-light);
+}
+@media(min-width: 1300px){
+    .body-gradient{
+        backdrop-filter: saturate(160%);
+        background: var(--gradient-bottom), var(--gradient-top);
+    }
+}
+@media(max-width: 1300px){
+    .body-gradient{
+        backdrop-filter: saturate(160%);
+        background: var(--gradient-bottom-l), var(--gradient-top-l);
+    }
+}
+@media(max-width: 1000px){
+    .body-gradient{
+        backdrop-filter: saturate(160%);
+        background: var(--gradient-bottom-m), var(--gradient-top-m);
+    }
+}
+
+
+/*general*/
+html{
+    overflow-x:hidden;
+}
+nav{
+    background-color: rgb(39, 39, 39) !important;
+}
+section{
+    padding: 10rem 0 10rem;
+}
+#home{
+    padding:0;
+}
+#about{
+    padding-top: 6rem;
+}
+#contact{
+    padding-bottom: 4.5rem;
+}
+h1{
+    font-size:4rem;
+    letter-spacing: 0.2rem;
+    line-height: 0.89;
+}
+h2{
+    font-size:2rem;
+    padding-bottom:1.6rem;
+}
+h3{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+}
+h4{
+    font-size: 1.5rem;
+    color:rgb(55, 55, 55);
+    padding-bottom: 0.3rem;
+}
+p{
+    /* max-width: 85%; */
+    padding-right: 2.5rem;
+}
+
+@media(max-width:767px){
+    p{
+        padding-right:0rem;
+    }
+    section{
+        padding: 5rem 0 7rem;
+    }
+    #home p{
+        max-width: 30ch;
+    }
+    h1{
+        font-size: 3rem;
+    }
+   
+}
+@media(max-width:576px){
+    section{
+        padding: 4rem 0 5rem;
+    }
+    h1{
+        font-size:2.5rem;
+        letter-spacing: 0.2rem;
+        line-height: 0.89;
+    }
+}
+
+.accordion-item{
+    max-width:80%;
+}
+.nav-item{
+    margin-right: 2rem;
+}
+footer{
+    padding-top: 1.5rem;
+}
