@@ -6,7 +6,7 @@ available: true
 unavailableMessage: Sorry, I am currently unavailable! Please check back on this website soon. 
 homeTitle: Dr Tess Patterson
 homeDescription: Registered clinical psychologist. Based in Dunedin, New Zealand
-homeImage: ./assets/tess_home_resize.png
+homeImage: ./assets/tess.webp
 aboutPara1Title: Who Am I?
 aboutPara1Body: I am a registered clinical psychologist and hold a PhD in Psychology. I teach and conduct research at the University of Otago. I am experienced in working with persons presenting with a range of mental health and well-being issues such as anxiety, depression, addiction and more.
 aboutDropdown1Title: Qualifications
@@ -16,7 +16,7 @@ aboutDropdown2Body: <p>My current research focuses on survivors of sexual abuse 
 aboutPara2Title: Treatment Approach
 aboutPara2Body: As a therapist I feel privileged to work alongside an individual in a process of change to reduce suffering and enhance functional living. I have a deep sense of compassion in relation to the human condition and I am known for my empathetic and kind approach. I am committed to helping clients achieve their goals and desired outcomes.
 treatmentBody: <p>I offer assessment, diagnosis and treatment for mental health difficulties such as</p><ul><li>anxiety</li><li>depression</li><li>obsessive-compulsive disorder</li><li>post-traumatic stress disorder</li><li>addiction</li><li>sexual abuse</li></ul><p>I specialise in providing treatment intervention for sexual abuse or sexual violence. Due to limited time availability I am currently prioritising those seeking help related to sexual abuse/sexual violence or those struggling with addictive type disorders or substance use.</p>
-treatmentImage: ./assets/tess_with_client_crop_resize.jpg
+treatmentImage: ./assets/tess_client.webp
 pricingPrice: $180 (plus GST) per 50 minute session
 pricingPara1Title: Payment Arrangements
 pricingPara1Body: <p>If paying for the session personally then direct payment is to be made to a specified bank account within 24 hours following the appointment session.</p><p>For payment via other means (e.g., Employment Assisted Programmes, ACC), an invoice for payment will be sent to the relevant organization directly.</p>
