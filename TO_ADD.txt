@@ -1,0 +1,6 @@
+Need to add:
+Make editable on netlifyCMS
+Fix/check qualifications
+Javascript for scrollspy, and javascript for menu collapse once a nav-item is clicked (on mobile)
+Website domain
+Proper redirect link for static forms once website domain is up
