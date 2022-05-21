@@ -20,12 +20,14 @@ collections:
       - { label: "About Paragraph1 Title", name: "aboutPara1Title", widget: "string" }
       - { label: "About Paragraph1 Body", name: "aboutPara1Body", widget: "markdown" }
       - { label: "About Dropdown1 Title", name: "aboutDropdown1Title", widget: "string" }
-      - { label: "About Dropdown1 Body", name: "aboutDropdown1Body", widget: "markdown" }
+      - { label: "About Dropdown1 Body", name: "aboutDropdown1List", widget: "list" }
       - { label: "About Dropdown2 Title", name: "aboutDropdown2Title", widget: "string" }
       - { label: "About Dropdown2 Body", name: "aboutDropdown2Body", widget: "markdown" }
       - { label: "About Paragraph2 Title", name: "aboutPara2Title", widget: "string" }
       - { label: "About Paragraph2 Body", name: "aboutPara2Body", widget: "markdown" }
-      - { label: "Treatment Body", name: "treatmentBody", widget: "markdown" }
+      - { label: "Treatment Body 1", name: "treatmentPara1Body", widget: "markdown" }
+      - { label: "Treatment List", name: "treatmentList", widget: "list" }
+      - { label: "Treatment Body 2", name: "treatmentPara2Body", widget: "markdown" }
       - { label: "Treatment Image", name: "treatmentImage", widget: "image" }
       - { label: "Pricing Price", name: "pricingPrice", widget: "string" }
       - { label: "Pricing Paragraph1 Title", name: "pricingPara1Title", widget: "string" }
