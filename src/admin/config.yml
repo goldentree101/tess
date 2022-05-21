@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets"
+public_folder: "/assets"
+collections: 
+  - name: "page"
+    label: "Page"
+    folder: "src/options"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Available", name: "available", widget: "boolean" }
+      - { label: "Unavailable Message", name: "unavailableMessage", widget: "string" }
+      - { label: "Home Title", name: "homeTitle", widget: "string" }
+      - { label: "Home Description", name: "homeDescription", widget: "string" }
+      - { label: "Home Image", name: "homeImage", widget: "image" }
+      - { label: "About Paragraph1 Title", name: "aboutPara1Title", widget: "string" }
+      - { label: "About Paragraph1 Body", name: "aboutPara1Body", widget: "markdown" }
+      - { label: "About Dropdown1 Title", name: "aboutDropdown1Title", widget: "string" }
+      - { label: "About Dropdown1 Body", name: "aboutDropdown1Body", widget: "markdown" }
+      - { label: "About Dropdown2 Title", name: "aboutDropdown2Title", widget: "string" }
+      - { label: "About Dropdown2 Body", name: "aboutDropdown2Body", widget: "markdown" }
+      - { label: "About Paragraph2 Title", name: "aboutPara2Title", widget: "string" }
+      - { label: "About Paragraph2 Body", name: "aboutPara2Body", widget: "markdown" }
+      - { label: "Treatment Body", name: "treatmentBody", widget: "markdown" }
+      - { label: "Treatment Image", name: "treatmentImage", widget: "image" }
+      - { label: "Pricing Price", name: "pricingPrice", widget: "string" }
+      - { label: "Pricing Paragraph1 Title", name: "pricingPara1Title", widget: "string" }
+      - { label: "Pricing Paragraph1 Body", name: "pricingPara1Body", widget: "markdown" }
+      - { label: "Pricing Paragraph2 Title", name: "pricingPara2Title", widget: "string" }
+      - { label: "Pricing Paragraph2 Body", name: "pricingPara2Body", widget: "markdown" }
+      - { label: "Contact Message", name: "contactMessage", widget: "string" }
+      - { label: "Contact Success Message", name: "contactSuccessMessage", widget: "markdown" }

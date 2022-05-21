@@ -11,9 +11,6 @@
 }
 
 /*general*/
-html{
-    /* overflow-x:hidden; */
-}
 section{
     padding: 10rem 0 10rem;
 }
@@ -36,11 +33,6 @@ h4{
     font-size: 1.5rem;
     color:rgb(55, 55, 55);
     padding-bottom: 0.3rem;
-}
-
-.container{
-    /* padding-right: 1rem;
-    padding-left: 1rem; */
 }
 
 .light{
