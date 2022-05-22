@@ -7,7 +7,7 @@ collections:
   - name: "page"
     label: "Page"
     folder: "src/options"
-    create: false
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: 
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
