@@ -9,6 +9,7 @@ const links = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", function () {
     for (let i = 0; i < sections.length; i++) {
+        //Error with math comparison.. should be >= sections.length-1
         const sectionIndexForHeightCalc = i <= sections.length ? i : i + 1;
         if (window.scrollY > sections[i].offsetTop - sections[sectionIndexForHeightCalc].clientHeight / 2) {
             links.forEach(link => { link.classList.remove("active") });
