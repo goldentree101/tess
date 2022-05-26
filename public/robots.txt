@@ -1,0 +1,2 @@
+User-agent: Googlebot Disallow: /success/
+User-agent: * Disallow: /success/

@@ -8,7 +8,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addWatchTarget("./src/style.css");
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy("./src/admin");
+    eleventyConfig.addPassthroughCopy("./src/robots.txt");
     
-
     return { dir: { input: "src", output: "public" } };
 }
