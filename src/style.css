@@ -3,16 +3,22 @@
     --bg-light: rgba(255, 255, 255, 0.717);
     --clr-orange: #feeabc;
     --gradient-top: radial-gradient(circle at top right, var(--clr-orange) 0%, #717fb91c 35%);
-    --gradient-bottom: radial-gradient(circle at bottom left, var(--clr-orange) 0%, #dde4ff23 40%);
+    --gradient-bottom: radial-gradient(circle at bottom left, var(--clr-orange) 0%, #dde4ff23 45%);
     --gradient-top-m: radial-gradient(circle at top right, var(--clr-orange) 0%, #717fb91c 15%);
     --gradient-bottom-m: radial-gradient(circle at bottom left, var(--clr-orange) 0%, #dde4ff23 24%);
     --gradient-top-l: radial-gradient(circle at top right, var(--clr-orange) 0%, #717fb91c 25%);
     --gradient-bottom-l: radial-gradient(circle at bottom left, var(--clr-orange) 0%, #dde4ff23 35%);
 }
 
+/*classes*/
+.light{
+    background-color: var(--bg-light);
+}
+
+
 /*general*/
 section{
-    padding: 10rem 0 10rem;
+    padding: 9rem 0 9rem;
 }
 
 h1{
@@ -21,22 +27,21 @@ h1{
     line-height: 0.89;
 }
 h2{
+
     font-size:2rem;
     padding-bottom:1.6rem;
 }
 h3{
+
     font-size: 1.5rem;
     padding-bottom: 2rem;
 
 }
-h4{
-    font-size: 1.5rem;
-    color:rgb(55, 55, 55);
-    padding-bottom: 0.3rem;
+h3,h4{
+    font-size: 1.4rem;
 }
-
-.light{
-    background-color: var(--bg-light);
+h4{
+    padding-bottom: 0.3rem;
 }
 
 
@@ -56,57 +61,75 @@ h4{
 .home{
     padding:0;
 }
+.home-p{
+    max-width: 60ch;
+}
 
 /*contact*/
 .contact{
     padding-bottom: 2.5rem;
 }
+.submit-button{
+    background-color: rgb(24, 24, 24);
+    transition: all 0.3s ease-in-out;
+}
+.submit-button:hover,.submit-button:focus{
+    background-color: rgb(54, 54, 54);
+}
 
 
 /*Media queries*/
+@media(max-width: 991px){
+    section{
+        padding: 6rem 0 8rem;
+    }
+    .nav-item{
+        padding-top:0.5rem;
+        padding-bottom: 1rem;
+    }
+}
 @media(max-width:767px){
     section{
         padding: 5rem 0 7rem;
     }
-    #home p{
-        max-width: 30ch;
-    }
     h1{
         font-size: 3rem;
     }
-   
 }
 @media(max-width:576px){
+
     section{
-        padding: 4rem 0 5rem;
-    }
-    #contact{
-        margin-bottom: 0rem;
-        padding-bottom: 0rem;
+        padding: 4rem 0 6rem;
     }
     h1{
         font-size:2.5rem;
         letter-spacing: 0.2rem;
         line-height: 0.89;
     }
+    
+    #contact{
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
+    }
+
 }
 
 /*gradient background*/
 @media(min-width: 1300px){
     .body-gradient{
-        backdrop-filter: saturate(160%);
+        backdrop-filter: saturate(140%);
         background: var(--gradient-bottom), var(--gradient-top);
     }
 }
 @media(max-width: 1300px){
     .body-gradient{
-        backdrop-filter: saturate(160%);
+        backdrop-filter: saturate(140%);
         background: var(--gradient-bottom-l), var(--gradient-top-l);
     }
 }
 @media(max-width: 1000px){
     .body-gradient{
-        backdrop-filter: saturate(160%);
+        backdrop-filter: saturate(140%);
         background: var(--gradient-bottom-m), var(--gradient-top-m);
     }
 }
