@@ -56,6 +56,9 @@ h4{
 .home{
     padding:0;
 }
+.home p{
+    max-width: 60ch;
+}
 
 /*contact*/
 .contact{
@@ -68,9 +71,7 @@ h4{
     section{
         padding: 5rem 0 7rem;
     }
-    #home p{
-        max-width: 30ch;
-    }
+    
     h1{
         font-size: 3rem;
     }
