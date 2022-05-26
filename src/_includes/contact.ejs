@@ -23,8 +23,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone number (if you prefer)</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" 
-                                aria-describedby="phoneHelp">
+                            <input type="tel" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
                         </div>
                         <div class="mb-3">
 
@@ -54,10 +53,12 @@
                         </div>
                     </form>
                     <% }else{ %>
-                        <p><i>
-                                <%= page.data.unavailableMessage %>
-                            </i></p>
-                        <% } %>
+                        <div style="padding-bottom: 15rem;">
+                            <p class="py-5"><i>
+                                    <%= page.data.unavailableMessage %>
+                                </i></p>
+                            <% } %>
+                        </div>
             </div>
         </div>
     </div>
